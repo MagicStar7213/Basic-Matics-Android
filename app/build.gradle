@@ -5,15 +5,6 @@ plugins {
 apply plugin: 'kotlin-android'
 
 android {
-    signingConfigs {
-        release {
-            storeFile file('D:/Basic Matics Android/sign/bsm.jks')
-            storePassword "basicmatics"
-            keyAlias "Basic Matics"
-            keyPassword "basicmatics"
-        }
-    }
-
     compileSdk 33
     compileSdkVersion 33
     buildToolsVersion '33.0.2'
@@ -26,7 +17,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.release
         vectorDrawables {
             useSupportLibrary true
         }
@@ -36,7 +26,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
