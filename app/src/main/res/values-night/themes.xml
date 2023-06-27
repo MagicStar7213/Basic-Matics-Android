@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BasicMatics" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/default_dark</item>
+        <item name="colorPrimaryDark">#006DC7</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

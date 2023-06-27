@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Basic Matics</string>
+    <string name="divide_button">\u00F7  Dividir</string>
+    <string name="remainder_button">\u00f7 Resto</string>
+    <string name="multiply_button">\u00D7  Multiplicar</string>
+    <string name="add_button">\u002b Sumar</string>
+    <string name="subtract_button">\u2212 Restar</string>
+
+    <string name="settings">Ajustes</string>
+    <string name="general">General</string>
+    <string name="custom">Persolanizaci\u00f3n</string>
+    <string name="aprox">Aproximado</string>
+    <string name="divide">Dividir</string>
+    <string name="multiply">Multiplicar</string>
+    <string name="add">Sumar</string>
+    <string name="subtract">Restar</string>
+    <string name="remainder">Resto</string>
+    <string name="calculate">Calcular</string>
+    <string name="clear">Borrar</string>
+    <string name="first_num">Primer N\u00famero</string>
+    <string name="second_num">Segundo N\u00famero</string>
+</resources>

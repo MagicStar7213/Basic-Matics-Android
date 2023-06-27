@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light" tools:keep="@style/AppTheme">
+        <item name="colorPrimary">@color/default_light</item>
+        <item name="colorPrimaryDark">@color/default_dark</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+</resources>
