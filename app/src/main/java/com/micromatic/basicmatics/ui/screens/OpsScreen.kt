@@ -70,7 +70,8 @@ fun OpsCalc(op: String) {
             subtract ->
                 result = subtract(text1.toDouble(), text2.toDouble())
         }
-    }
+    } else
+        result = "0"
 
 
     Text(
