@@ -57,6 +57,21 @@ fun OpsCalc(op: String) {
         text2 = it
     }
 
+    if (text1 != "" && text2 != "") {
+        when (opTitle) {
+            divide ->
+                result = divide(text1.toDouble(), text2.toDouble())
+            remainder ->
+                result = remainder(text1.toDouble(), text2.toDouble())
+            multiply ->
+                result = multiply(text1.toDouble(), text2.toDouble())
+            add ->
+                result = add(text1.toDouble(), text2.toDouble())
+            subtract ->
+                result = subtract(text1.toDouble(), text2.toDouble())
+        }
+    }
+
 
     Text(
         text = "- $opTitle -",
@@ -101,7 +116,7 @@ fun OpsCalc(op: String) {
                 onValueChange = change1,
                 label = { Text(stringResource(R.string.first_num)) },
                 modifier = Modifier
-                    .padding(horizontal = 7.dp,)
+                    .padding(horizontal = 7.dp)
                     .weight(1f)
                     .wrapContentWidth(Alignment.Start),
                 singleLine = true,
@@ -156,11 +171,12 @@ fun OpsCalc(op: String) {
                           }
                 },
                 modifier = Modifier.padding(horizontal = 5.dp),
-                enabled = calcEnabled
+                enabled = calcEnabled,
+                contentPadding = PaddingValues(horizontal = 5.dp, vertical = 2.dp)
             ) {
                 Text(
-                    text = stringResource(R.string.calculate),
-                    fontSize = 18.sp
+                    text = "=",
+                    fontSize = 25.sp
                 )
             }
             Button(
@@ -192,5 +208,5 @@ fun OpsCalc(op: String) {
 @Preview(showBackground = true)
 @Composable
 fun OpsPreview() {
-    OpsScreen(op = "Multiply")
+    OpsScreen(op = "Divide")
 }
