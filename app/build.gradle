@@ -42,7 +42,7 @@ android {
         enabled = true
     }
     kotlinOptions {
-        jvmTarget = '21'
+        jvmTarget = '20'
         allWarningsAsErrors = false
     }
     lint {
