@@ -6,4 +6,5 @@
 
 This is the port of the original Python app [Basic-Matics](https://github.com/MagicStar7213/Basic-Matics.git).
 
-The experience is quite similar, except of the settings page, not added for now
+The experience is quite similar, except of the settings page, that won't be added
+.
